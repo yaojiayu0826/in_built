@@ -17,8 +17,12 @@
               {% if site.title != '' %}
               <h4 class="text-center">{{site.title}}</h4>
               {% endif %}
-              {% if site.organization != '' %}
-              <p class="text-center">{{site.organization}}</p>
+              {% if site.university != '' %}
+                {% if site.organization != '' %}
+                <p><b><i>{{site.university}}, <a href="https://{{site.organization_url}}">{{site.organization}}</a></i></b></p>
+                {% else %}
+                <p><b><i>{{site.university}}</i></b></p>
+                {% endif %}
               {% endif %}
               {% if site.email != '' %}
               <p class="text-center">{{site.email}}</p>
@@ -30,12 +34,20 @@
           <p class="text-center">
             {% if site.description != '' %}
             {{site.description}}
+            {% else %}
+            I am a 5th year PhD student at the Data to Actionable Knowledge (<a href="https://dtak.github.io">DtAK</a>) Lab at Harvard University, advised by <a href="https://Finale.seas.harvard.edu">Prof. Finale Doshi-Velez</a>. 
+            My research focus identifying and tackling challenges throughout the machine learning pipeline -- from data preparation to model deployment -- 
+            with the goal of bridging the gap between machine learning methodology and clinical application. 
+            I received my bachelor’s degree in applied math and computer science from Emory University, where I did research with Prof. Joyce Ho. 
+            My current research includes developing pipelines for data processing and exploration, 
+            developing models that are robust under real-life limitations (e.g. data heterogeneity, data scarcity and domain knowledge constraints), 
+            as well as developing quantitative and qualitative assessments of models for specific downstream desiderata (e.g. statistical power, human-interpretability).
             {% endif %}
           </p>
           
           <div class="hero-buttons">
             {% if site.scholar_userid != '' %}
-            <a href="https://scholar.google.com/citations?user={{site.scholar_userid }}"><button class="btn btn-default btn-lg"><i class="fa fa-google fa-lg"></i>Scholar</button></a>
+            <a href="https://scholar.google.com/citations?user={{site.scholar_userid }}"><button class="btn btn-default btn-lg"><i class="fa fa-graduation-cap fa-lg"></i>Scholar</button></a>
             {% endif %}
             {% if site.linkedin_username != '' %}
             <a href="hhttps://www.linkedin.com/in/{{site.linkedin_username }}"><button class="btn btn-default btn-lg"><i class="fa fa-linkedin fa-lg"></i>LinkedIn</button></a>

@@ -147,18 +147,18 @@ button.btn, input.btn {
     justify-content: center;
     .hero-img {
       float: left;
-      width: 30%;
+      width: 25%;
       margin-right: 20%;
     }
     .hero-contact {
-      width: 30%;
+      width: 35%;
       p {
         text-align: left;
         margin: 0.5em 0 0 0;
       }
       h4 {
         text-align: left;
-        margin: 0 0 0 0;
+        margin: 0.5em 0 0 0;
       }
     }
     margin-bottom: 5em;
@@ -460,3 +460,131 @@ pre {
     .highlight .vg { color: #000000 } /* Name.Variable.Global */
     .highlight .vi { color: #000000 } /* Name.Variable.Instance */
     .highlight .il { color: #0000cf; font-weight: bold } /* Literal.Number.Integer.Long */
+
+/*--------------------------------------------------------------
+	7.0 Publication
+--------------------------------------------------------------*/
+.publications {
+  width: auto;
+  margin-top: 2rem;
+  h1 {
+    color: var(--global-theme-color);
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 1em;
+    margin-bottom: 1em;
+  }
+  h2 {
+    margin-bottom: 1rem;
+    span {
+      font-size: 1.5rem;
+    }
+  }
+  h2.year {
+    color: var(--global-divider-color);
+    border-top: 1px solid var(--global-divider-color);
+    padding-top: 1rem;
+    margin-top: 2rem;
+    margin-bottom: -2rem;
+    text-align: right;
+  }
+  ol.bibliography {
+    list-style: none;
+    padding: 0;
+    margin-top: 0;
+
+    li {
+      margin-bottom: 1rem;
+      .abbr {
+        height: 2rem;
+        margin-bottom: 0.5rem;
+        abbr {
+          display: inline-block;
+          background-color: var(--global-theme-color);
+          padding-left: 1rem;
+          padding-right: 1rem;
+          a {
+            color: white;
+            &:hover {
+              text-decoration: none;
+            }
+          }
+        }
+        .award {
+          color: var(--global-theme-color) !important;
+          border: 1px solid var(--global-theme-color);
+        }
+      }
+      .title {
+        font-weight: bolder;
+      }
+      .author {
+        a {
+          border-bottom: 1px dashed var(--global-theme-color);
+          &:hover {
+              border-bottom-style: solid;
+              text-decoration: none;
+          }
+        }
+        > em {
+          border-bottom: 1px solid;
+          font-style: normal;
+        }
+      }
+      .links {
+        a.btn {
+          color: #2E4453;
+          border: solid 1px #d5e0e7;
+          border-radius: 4px;
+          padding-left: 1rem;
+          padding-right: 1rem;
+          padding-top: 0.25rem;
+          padding-bottom: 0.25rem;
+          font-weight: 600;
+          &:hover, &.btn-default:hover {
+            background-color: white;
+            border: solid 1px #b0c5d2;
+            -moz-box-shadow: 0 1px 0 #b0c5d2;
+            -webkit-box-shadow: 0 1px 0 #b0c5d2;
+            box-shadow: 0 1px 0 #b0c5d2;
+          }
+        }
+      }
+      .hidden {
+        font-size: 0.875rem;
+        max-height: 0px;
+        overflow: hidden;
+        text-align: justify;
+        transition-property: 0.15s ease;
+        -moz-transition: 0.15s ease;
+        -ms-transition: 0.15s ease;
+        -o-transition: 0.15s ease;
+        transition: all 0.15s ease;
+
+        p {
+          line-height: 1.4em;
+          margin: 10px;
+        }
+        pre {
+          font-size: 1em;
+          line-height: 1.4em;
+          padding: 10px;
+        }
+      }
+      .hidden.open {
+        max-height: 100em;
+        transition-property: 0.15s ease;
+        -moz-transition: 0.15s ease;
+        -ms-transition: 0.15s ease;
+        -o-transition: 0.15s ease;
+        transition: all 0.15s ease;
+      }
+      div.abstract.hidden {
+        border: dashed 1px var(--global-bg-color);
+      }
+      div.abstract.hidden.open {
+        border-color: var(--global-text-color);
+      }
+    }
+  }
+}
