@@ -46,9 +46,27 @@
           <div id="navbar" class="navbar-collapse collapse">
             <ul class="nav navbar-nav navbar-right">
               {% for item in site.nav_item %}
+              {% if page.title %}
+                {% if page.title == item.text %}
+                <li class= "active">
+                  <a href="{{ item.url }}">{{ item.text }}</a>
+                </li>
+                {% else %}
                 <li>
                   <a href="{{ item.url }}">{{ item.text }}</a>
                 </li>
+                {% endif %}
+              {% else %}
+              {% if item.text == 'Home' %}
+              <li class= "active">
+                <a href="{{ item.url }}">{{ item.text }}</a>
+              </li>
+              {% else %}
+              <li>
+                <a href="{{ item.url }}">{{ item.text }}</a>
+              </li>
+              {% endif %}
+              {% endif %}
               {% endfor %}
             </ul>
           </div>
