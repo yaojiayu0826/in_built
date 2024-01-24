@@ -14,10 +14,10 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: "Jiayu Yao (姚佳瑜)"
-email: 'jiy328[at]g[dot]harvard[dot]edu'
-university: 'Harvard University'
-organization: 'DtAK'
-organization_url: 'dtak.github.io'
+email: 'jiayu.yao[at]gladstone[dot]ucsf[dot]edu'
+university: 'Gladstone Institutes'
+organization: ''
+organization_url: ''
 description: ""
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://yaojiayu0826.github.io/" # the base hostname & protocol for your site, e.g. https://example.com
@@ -93,7 +93,7 @@ pagination:
 ############################################################
 
 ### Phantom settings
-footer_text: '© 2022 Jiayu'
+footer_text: '© 2024 Jiayu'
 admin_name: 'Jiayu Yao'
 # google_analytics: "UA-9999999-99" # Update with your own tracking ID
 enable_contact: False

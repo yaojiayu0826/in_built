@@ -3,8 +3,8 @@ layout: inner
 permalink: /publications/
 title: Publications
 description:
-conference_years: [2021, 2019, 2018, 2016]
-workshop_years: [2020, 2019, 2018]
+conference_years: [2023, 2021, 2019, 2018, 2016]
+workshop_years: [2023, 2022, 2020, 2019, 2018]
 nav: true
 ---
 
